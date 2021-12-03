@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "test": "nodemon server.js"
   },
@@ -22,5 +23,9 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.14",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-google": "^0.14.0"
   }
 }

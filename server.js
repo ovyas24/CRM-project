@@ -1,9 +1,13 @@
 // setup express nodejs server
-var express = require('express');
-var app = express();
-var port = process.env.PORT || 3000;
+import express, { json, urlencoded } from 'express';
+import morgan from 'morgan';
+import cors from 'cors';
+import dotenv from 'dotenv';
 
-app.use(express.json());
-app.use(express.urlencoded());
+const app = express();
+const port = process.env.PORT || 3000;
+
+app.use(json());
+app.use(urlencoded());
 
 app.listen(port, () => console.log('Server listening on port ' + port));
